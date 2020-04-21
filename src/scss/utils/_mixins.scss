@@ -1,0 +1,14 @@
+@mixin fontSize($size) {
+    font-size: $size; 
+    font-size: calculateRem($size);
+  }
+
+@mixin tabletSize {
+    @media all and (min-width: 768px) { @content; }
+}
+
+@mixin desktopSize {
+    @media all and (min-width: 1200px) { @content; }
+}
+
+
