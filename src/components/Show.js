@@ -2,11 +2,11 @@ import React from 'react';
 import '../scss/main.scss';
 
 function Show(props) {  
-  console.log(props)
+
   const prevImage = props.image
   if (prevImage !== null){
     return (
-      <li className="show-item">
+      <div className="show-item">
           <p className="show-item__subtitle"> 
              {props.status} 
           </p>
@@ -17,12 +17,12 @@ function Show(props) {
                src= {prevImage.medium} 
                alt={props.name} 
           />
-      </li>
+      </div>
     );
   }
   else {
     return (
-      <li className="show-item">
+      <div className="show-item">
       <p className="show-item__subtitle"> 
         {props.status} 
       </p>
@@ -32,7 +32,7 @@ function Show(props) {
       <img className="show-item__picture--error" 
       
       />
-  </li>
+  </div>
      );
   }
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ShowDetail = (props) => {
   const {dataList, showItem} = props
-  console.log(dataList)
+  
     return (
       <div className="showdetail-wrapper">
       <Link to={`/#`}> <i className="return">// HOME</i> </Link>

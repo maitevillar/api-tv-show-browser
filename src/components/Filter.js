@@ -5,9 +5,7 @@ const Filter = (props) => {
   const updateCheckbox = () => {
     props.handleCheckbox()
   } 
-console.log(props)
 
-console.log(props)
   return (
     <form className="filter">
       <div className="filter--container__item-1">
