@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 310px;
   background-color: $lightColor;
-  padding: 20px 40px 0px 40px;
+  padding: 20px 0px 0px 0px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -10,12 +10,9 @@
   justify-content: center;
 
   @include tabletSize {
-    padding: 30px 50px 0px 50px;
+    padding-top: 30px 
   }
 
-  @include desktopSize {
-    padding: 30px 140px 0px 140px;
-  }
 
   .main-title{
     font-family: 'Antic Didone', serif;
@@ -24,6 +21,7 @@
     margin-bottom: 40px;
     color: $mainColor;
     margin-top: 30px;
+
 
     @include tabletSize {
       font-size: 90px;
@@ -44,21 +42,31 @@
         width: 300px;
         border: 0.071rem $mainColor solid;
         font-size: 1rem;
-        padding: 0rem 0.286rem 0rem 0.286rem;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: space-around;
+        padding: 0.5rem 0.286rem 0.5rem 0.286rem;
+        margin: 0px 20px 15px 20px;
 
         @include tabletSize {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
           width: 400px;
+          margin-bottom: 10px;
+          padding: 0rem 0.286rem 0rem 0.286rem;
         }
         
         .input-1{
-          width: 130px;
-          margin: 0.429rem;
+          width: 160px;
+          height: 30px;
+          margin: 0.329rem;
           padding: 0.214rem;
+          
           border-style: none;
           font-size: 0.70rem;
+
+          @include tabletSize {
+            width: 140px;
+            height: 25px;
+          }
         }
 
         .button-1{
@@ -66,7 +74,15 @@
           border-style: none;
           color: white;
           padding: 0rem 0.714rem 0rem 0.714rem;
+          margin: 0.329rem;
           font-size: 0.80rem;
+          height: 30px;
+          cursor: pointer;
+
+          @include tabletSize {
+            height: auto;
+            margin: 0rem;
+          }
         }
 
         .label-2{
@@ -97,7 +113,7 @@
   }
 
   .content-container{
-    padding:10px 10px;
+    padding: 10px 10px;
 
     .showlist-container{
       margin-top: 60px;
@@ -105,7 +121,12 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: center;
+
+      @include tabletSize {
+        justify-content: left;
+        padding-left: 10%;
+      }
      
       :hover{
         .show-item{
@@ -126,12 +147,11 @@
       .show-item{
         list-style-type: none;
         border: $mainColor 0.071rem solid;
-        margin: 8px;
+        margin: 10px;
         padding: 0.8rem;
         width: 200px;
         height: 340px;
         
-
         @include desktopSize {
           width: 250px;
           height: 410px;
@@ -165,7 +185,6 @@
 
   }
 
-  
   .showdetail-wrapper{
     display: flex;
     flex-direction: column;
@@ -184,7 +203,6 @@
     background-image: url('../../icons/back.png') ;
     background-size: contain;
   }
-
 
   .showlist-detail{
     align-self: center;
@@ -309,7 +327,7 @@
       padding-bottom: 5px;
 
       &__text{
-        color: #9e9591;
+        color:#9e9591;
       }
 
       .fa-github{
