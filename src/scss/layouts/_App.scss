@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 310px;
   background-color: $lightColor;
-  padding: 20px 40px 70px 40px;
+  padding: 20px 40px 0px 40px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -10,11 +10,11 @@
   justify-content: center;
 
   @include tabletSize {
-    padding: 30px 50px 70px 50px;
+    padding: 30px 50px 0px 50px;
   }
 
   @include desktopSize {
-    padding: 30px 140px 70px 140px;
+    padding: 30px 140px 0px 140px;
   }
 
   .main-title{
@@ -108,9 +108,17 @@
       justify-content: space-evenly;
      
       :hover{
-        .show-item__picture{
-          width: 91%;
-          height: 71%;      
+        .show-item{
+          background-color: $mainColor;
+
+          &__subtitle{
+            color: $lightColor;
+          }
+
+          &__picture{
+            width: 91%;
+            height: 71%;    
+          }
         }
       }
 
@@ -162,17 +170,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    .return{
-      position: relative;
-      right: 450px;
-      text-align: left;
-      font-family: 'Montserrat', sans-serif;
-      color: $mainColor;
-      font-size: 20px;
-      font-style: normal;
-    }
+  
   }
+
+  .return:hover{
+    background-image: url('../../icons/back-h.png') ;
+    }
+
+  .return{
+    align-self: center;
+    width: 35px;
+    height: 35px;
+    background-image: url('../../icons/back.png') ;
+    background-size: contain;
+  }
+
 
   .showlist-detail{
     align-self: center;
@@ -217,11 +229,12 @@
         }
 
         .show-picture{
-          width: 150px;
+          width: 40%; 
           margin-right: 30px;
 
           @include tabletSize {
-            height: 50%;
+            max-width: 150px;
+            max-height: 200px;
           }
         }
 
@@ -278,6 +291,30 @@
         max-width: 360px;
       }
 
+      }
+    }
+  }
+
+  .footer{
+    width: 100%;
+    align-self: center;
+    padding-top: 5px;
+    margin-top: 50px;
+    border-top: $mainColor 1px solid;
+
+    .footer-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 5px;
+
+      &__text{
+        color: #9e9591;
+      }
+
+      .fa-github{
+        color: $mainColor;
+        margin-left: 8px;
       }
     }
   }

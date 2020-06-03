@@ -4,6 +4,7 @@ import Showlist from './Showlist';
 import ShowDetail from './ShowDetail';
 import { Switch, Route } from 'react-router-dom';
 import Filter from './Filter';
+import Footer from './Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class App extends React.Component {
 
   getDataFromApi() {
     // hacemos la llamada al servidor
-    fetch(`http://api.tvmaze.com/search/shows?q=girs`)
+    fetch(`https://api.tvmaze.com/search/shows?q=girs`)
       .then(response => response.json())
       .then(responseData => {
         // y cuando responde el servidor guardamos los datos en el estado
@@ -79,6 +80,8 @@ class App extends React.Component {
                       isRunning={isRunning} 
                       value={value}
             />
+
+            <Footer/>
           </Route>
           <Route path="/show/:id" 
                  render={this.renderShowDetail}

@@ -7,7 +7,7 @@ const ShowDetail = (props) => {
   
     return (
       <div className="showdetail-wrapper">
-      <Link to={`/#`}> <i className="return">// HOME</i> </Link>
+      <Link to={`/#`} className="return"> </Link>
       <h1 className="main-title"> - {showItem.show.name} - </h1>
       <div className="showlist-detail">
         <div className="head-detail"> x </div>
@@ -46,5 +46,3 @@ const ShowDetail = (props) => {
     );
   }
 export default ShowDetail;
-
-// className="show__content--text"> Sinopsis: {showItem.show.summary} </span>
