@@ -1,6 +1,61 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# TV show browser
+
+tv browser developed with javascript Vanilla, REACT, HTML5, CSS5 and SASS technology and API REST. You can search for a TV program and filter by those that are currently on air.
+
+## Starting 🚀
+
+_These instructions will allow you to obtain a copy of the running project on your local machine for development and testing purposes._
+
+_To save this project locally:_
+
+[Link to Github documentation](https://help.github.com/es/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
+1. You are on the main page of the repository.
+2. Under the name of the repository, click *clone* or *download*
+3. To clone the repository using _HTTPS_, click "clone with HTTP".
+4. Open the terminal and change to the location where you want the directory to be placed.
+5. Type in "git clone," then paste the URL you copied in step 2.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+6. Press Enter (Intro). Your local clone will be created.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `Spoon-Knife`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+### Instalation 🔧
+
+You will need to install Node.js to work with this repository, then:
+
+1. Download or clone the repository. 
+2. Open the project in your code editor (Visual Sudio Code, Atom, Brackets...)
+3. Install the local units
+```
+$ npm install
+```
+4. Start the project:
+```
+$ npm start
+```
+
+## Web images 💻
+
+![app](/src/icons/show-app.jpg)
+![tablet](/src/icons/tv-show-tablet.jpg)
+![desktop](/src/icons/te-show-desktop.jpg)
+![gif](/src/icons/show-finder.gif)
+
+
+# REACT APP
+
+## Available Scripts 📋
 
 In the project directory, you can run:
 
@@ -37,32 +92,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Learn More ⚙️
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+---
+⌨️ with ❤️ by [Maite Villar]
