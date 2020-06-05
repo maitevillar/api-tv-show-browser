@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![gif](/src/icons/show-finder.gif)
+
 # TV show browser
 
 tv browser developed with javascript Vanilla, REACT, HTML5, CSS5 and SASS technology and API REST. You can search for a TV program and filter by those that are currently on air.
@@ -50,7 +52,6 @@ $ npm start
 ![app](/src/icons/show-app.jpg)
 ![tablet](/src/icons/tv-show-tablet.jpg)
 ![desktop](/src/icons/te-show-desktop.jpg)
-![gif](/src/icons/show-finder.gif)
 
 
 # REACT APP
