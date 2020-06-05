@@ -1,7 +1,7 @@
 
 
 // const getDataFromApi = searchText => {
-//     return fetch(`http://api.tvmaze.com/search/shows?q=${searchText}`)
+//     return fetch(`https://api.tvmaze.com/search/shows?q=${searchText}`)
 //       .then(response => response.json())
 //   };
   
